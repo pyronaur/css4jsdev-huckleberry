@@ -1,12 +1,71 @@
 * {
-  box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
 }
 
 html,
 body {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 135%;
+	line-height: 1.6
 }
 
-/* Add styles here! */
+.max-width-wrapper {
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	padding-top: 96px;
+	padding-bottom: 48px;
+}
+
+.intro-chunk {
+	padding: 32px;
+}
+
+.intro-chunk p:nth-child(2) {
+	width: 720px;
+}
+
+.intro-chunk p:nth-child(3) {
+	width: 600px;
+}
+
+.intro-chunk strong {
+	color: hsl(160deg 100% 30%);
+	font-weight: 900;
+}
+
+main {
+	padding: 96px 0;
+	border-top: 16px solid hsl(0deg 0% 40%);
+	background-color: hsl(0deg 0% 60%);
+	display: block;
+}
+
+.card {
+	background-color: hsl(0deg 0% 100%);
+	padding: 32px;
+	border-bottom: 16px solid hsl(0deg 0% 40%);
+}
+
+.indented-heading {
+	background-color: hsl(45deg, 100%, 50%);
+	border-bottom: solid 16px hsl(45deg, 100%, 40%);
+	padding: 16px 32px;
+
+	width: fit-content;
+	margin-left: -48px;
+	margin-top: -16px;
+}
+
+@media (min-width: 768px) {
+	.indented-heading {
+		padding-left: calc(16px + 32px);
+	}
+}
